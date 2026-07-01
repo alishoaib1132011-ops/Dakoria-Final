@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<!--
+====================================================================
+  DAKORIA — official game site
+====================================================================
+  HOW TO SET YOUR DOWNLOAD LINK (do this in Notepad):
+  1. Press Ctrl+F in Notepad and search for:  PASTE_YOUR_LINK_HERE
+  2. Replace it with your real download link (keep the quotes).
+  3. Save the file and open it in a browser — the Download button
+     will now send people straight to your link.
+
+  Your Discord username is already set to copy on click:  silvr.ko
+  If you ever change your username, search for:  silvr.ko
+  and replace it (there are two spots — one in the text, one in
+  the code near the bottom).
+====================================================================
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dakoria — A Realm Worth Saving</title>
+<meta name="description" content="Dakoria is a single-player 2D fantasy adventure. Lightweight, story-driven, and free to explore.">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg-void:        #0a0f0c;
+    --bg-deep:        #0e1712;
+    --bg-panel:       #131f19;
+    --bg-panel-2:     #182620;
+    --line:           rgba(201,162,75,0.16);
+    --line-strong:    rgba(201,162,75,0.35);
+
+    --gold:           #c9a24b;
+    --gold-bright:    #e9cd85;
+    --gold-dim:       #7d652c;
+
+    --parchment:      #ece0bf;
+    --parchment-dim:  #b9ad8c;
+
+    --crimson:        #7f2a34;
+    --crimson-bright: #a8404c;
+
+    --emerald:        #3c6b58;
+    --emerald-bright: #5a9880;
+
+    --ink:            #cfd6ce;
+    --ink-dim:        #8a988e;
+
+    --font-display: 'Cinzel', serif;
+    --font-body:    'EB Garamond', serif;
+    --font-accent:  'Cormorant Garamond', serif;
+
+    --radius: 3px;
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  html{ scroll-behavior: smooth; }
+
+  body{
+    background: var(--bg-void);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  ::selection{ background: var(--gold-dim); color: var(--parchment); }
+
+  a{ color: inherit; text-decoration: none; }
+  img{ display:block; max-width:100%; }
+
+  :focus-visible{
+    outline: 2px solid var(--gold-bright);
+    outline-offset: 3px;
+  }
+
+  .wrap{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .eyebrow{
+    font-family: var(--font-display);
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .eyebrow::before{
+    content:'';
+    width: 26px; height: 1px;
+    background: var(--gold-dim);
+  }
+
+  h1,h2,h3{
+    font-family: var(--font-display);
+    color: var(--parchment);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  /* ---------------------------------------------------------- */
+  /* ambient background texture                                  */
+  /* ---------------------------------------------------------- */
+  .grain{
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .vignette{
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 998;
+    background: radial-gradient(ellipse at 50% 40%, transparent 40%, rgba(0,0,0,0.55) 100%);
+  }
+
+  /* fireflies */
+  .fireflies{ position: fixed; inset:0; pointer-events:none; z-index: 2; overflow:hidden; }
+  .firefly{
+    position:absolute;
+    width: 3px; height: 3px;
+    border-radius: 50%;
+    background: var(--gold-bright);
+    box-shadow: 0 0 8px 2px var(--gold-bright);
+    opacity: 0;
+    animation: drift 14s ease-in-out infinite;
+  }
+  @keyframes drift{
+    0%{ opacity:0; transform: translate(0,0); }
+    10%{ opacity: .8; }
+    50%{ transform: translate(20px,-60px); }
+    90%{ opacity: .6; }
+    100%{ opacity:0; transform: translate(-10px,-120px); }
+  }
+
+  /* ---------------------------------------------------------- */
+  /* header                                                       */
+  /* ---------------------------------------------------------- */
+  header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 500;
+    background: rgba(10,15,12,0.72);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid transparent;
+    transition: border-color .4s ease, background .4s ease;
+  }
+  header.scrolled{
+    border-bottom: 1px solid var(--line);
+    background: rgba(10,15,12,0.92);
+  }
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    height: 78px;
+  }
+  .brand{
+    font-family: var(--font-display);
+    font-size: 20px;
+    letter-spacing: 0.18em;
+    color: var(--parchment);
+    display:flex;
+    align-items:center;
+    gap: 10px;
+  }
+  .brand .sigil{ width: 22px; height: 22px; }
+  .brand .sigil path{ fill: var(--gold); }
+
+  .nav-links{
+    display:flex;
+    gap: 38px;
+    list-style:none;
+  }
+  .nav-links a{
+    font-family: var(--font-display);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    position: relative;
+    padding-bottom: 4px;
+    transition: color .25s ease;
+  }
+  .nav-links a::after{
+    content:'';
+    position:absolute; left:0; right:100%; bottom:0;
+    height: 1px; background: var(--gold);
+    transition: right .3s ease;
+  }
+  .nav-links a:hover{ color: var(--parchment); }
+  .nav-links a:hover::after{ right: 0; }
+
+  .nav-cta{
+    font-family: var(--font-display);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--bg-void);
+    background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+    padding: 11px 22px;
+    border-radius: var(--radius);
+    border: 1px solid var(--gold-bright);
+    cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .nav-cta:hover{ transform: translateY(-1px); box-shadow: 0 6px 18px rgba(201,162,75,0.25); }
+
+  .nav-toggle{ display:none; }
+
+  /* mobile menu is hidden entirely outside the mobile breakpoint below,
+     so it can never appear on desktop regardless of browser quirks */
+  .mobile-menu{ display:none; }
+
+  /* ---------------------------------------------------------- */
+  /* hero                                                          */
+  /* ---------------------------------------------------------- */
+  .hero{
+    position: relative;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding: 160px 32px 120px;
+    overflow: hidden;
+  }
+
+  .hero-bg{
+    position:absolute; inset:0; z-index:0;
+    background:
+      radial-gradient(ellipse 900px 600px at 50% 15%, rgba(60,107,88,0.20), transparent 60%),
+      linear-gradient(180deg, #0a0f0c 0%, #0e1712 55%, #0a120d 100%);
+  }
+  .hero-mountains{ position:absolute; bottom:0; left:0; right:0; z-index:1; opacity: 0.9; }
+
+  .hero-content{ position:relative; z-index: 3; max-width: 780px; }
+
+  .hero .eyebrow{ justify-content:center; margin-bottom: 26px; }
+  .hero .eyebrow::before{ display:none; }
+  .hero .eyebrow::after{ content:''; width:26px; height:1px; background: var(--gold-dim); }
+
+  .hero h1{
+    font-size: clamp(48px, 8vw, 96px);
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 40px rgba(201,162,75,0.18);
+    margin-bottom: 22px;
+  }
+  .hero h1 span{
+    display:block;
+    font-family: var(--font-accent);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 0.28em;
+    color: var(--emerald-bright);
+    letter-spacing: 0.06em;
+    margin-top: 10px;
+  }
+
+  .hero p.lede{
+    font-family: var(--font-accent);
+    font-size: 21px;
+    color: var(--ink-dim);
+    max-width: 560px;
+    margin: 0 auto 46px;
+    font-style: italic;
+  }
+
+  .hero-actions{
+    display:flex;
+    gap: 18px;
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+
+  /* buttons */
+  .btn{
+    font-family: var(--font-display);
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 17px 34px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    display:inline-flex;
+    align-items:center;
+    gap: 12px;
+    border: 1px solid transparent;
+    transition: transform .2s ease, box-shadow .3s ease, background .25s ease;
+  }
+  .btn-primary{
+    color: #0a0f0c;
+    background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+    border-color: var(--gold-bright);
+    box-shadow: 0 10px 30px rgba(201,162,75,0.18);
+  }
+  .btn-primary:hover{ transform: translateY(-2px); box-shadow: 0 14px 34px rgba(201,162,75,0.32); }
+  .btn-primary:active{ transform: translateY(0); }
+
+  .btn-ghost{
+    color: var(--parchment);
+    background: rgba(236,224,191,0.03);
+    border-color: var(--line-strong);
+  }
+  .btn-ghost:hover{ background: rgba(236,224,191,0.07); border-color: var(--gold); }
+
+  .btn svg{ width: 16px; height: 16px; }
+
+  .hero-note{
+    margin-top: 22px;
+    font-size: 13px;
+    color: var(--ink-dim);
+    letter-spacing: 0.02em;
+  }
+  .hero-note b{ color: var(--gold); font-weight: 600; }
+
+  .scroll-cue{
+    position:absolute;
+    bottom: 40px; left:50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display:flex; flex-direction:column; align-items:center; gap:8px;
+    color: var(--ink-dim);
+    font-family: var(--font-display);
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    animation: bob 2.6s ease-in-out infinite;
+  }
+  .scroll-cue .line{ width:1px; height: 32px; background: linear-gradient(var(--gold), transparent); }
+  @keyframes bob{ 0%,100%{ transform: translate(-50%,0);} 50%{ transform: translate(-50%,8px);} }
+
+  /* ---------------------------------------------------------- */
+  /* section shell                                                */
+  /* ---------------------------------------------------------- */
+  section{ position: relative; z-index: 2; padding: 130px 0; }
+  .divider{
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--line-strong), transparent);
+  }
+
+  .section-head{ max-width: 620px; margin-bottom: 64px; }
+  .section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+  .section-head h2{ font-size: clamp(32px, 4vw, 46px); margin-top: 18px; line-height:1.15; }
+  .section-head p{ font-family: var(--font-accent); font-size: 19px; color: var(--ink-dim); margin-top: 16px; font-style: italic;}
+
+  .reveal{ opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in{ opacity: 1; transform: translateY(0); }
+
+  /* ---------------------------------------------------------- */
+  /* story                                                        */
+  /* ---------------------------------------------------------- */
+  .story{ background: var(--bg-deep); }
+  .story-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items:center;
+  }
+  .story-art{
+    aspect-ratio: 4/5;
+    border-radius: var(--radius);
+    border: 1px solid var(--line-strong);
+    position: relative;
+    overflow:hidden;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+  }
+  .story-art svg{ width:100%; height:100%; display:block; }
+  .story-art .frame{
+    position:absolute; inset: 10px;
+    border: 1px solid rgba(201,162,75,0.4);
+    pointer-events:none;
+  }
+  .story-text p{ margin-bottom: 18px; color: var(--ink); font-size: 18px; }
+  .story-text p.first-line::first-letter{
+    font-family: var(--font-display);
+    font-size: 3.4em;
+    float:left;
+    line-height: 0.8;
+    padding: 6px 10px 0 0;
+    color: var(--gold);
+  }
+
+  /* ---------------------------------------------------------- */
+  /* features                                                     */
+  /* ---------------------------------------------------------- */
+  .features{ background: var(--bg-void); }
+  .feature-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow:hidden;
+  }
+  .feature-card{
+    background: var(--bg-panel);
+    padding: 38px 32px;
+    transition: background .3s ease;
+  }
+  .feature-card:hover{ background: var(--bg-panel-2); }
+  .feature-card .ico{ width: 34px; height: 34px; margin-bottom: 22px; }
+  .feature-card .ico path, .feature-card .ico circle, .feature-card .ico rect{ stroke: var(--gold); }
+  .feature-card h3{ font-size: 18px; margin-bottom: 10px; letter-spacing: 0.02em; }
+  .feature-card p{ color: var(--ink-dim); font-size: 15.5px; }
+
+  /* ---------------------------------------------------------- */
+  /* gallery                                                      */
+  /* ---------------------------------------------------------- */
+  .gallery{ background: var(--bg-deep); }
+  .gallery-grid{
+    display:grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 18px;
+    height: 620px;
+  }
+  .gallery-grid .g1{ grid-row: 1 / 3; }
+  .g-item{
+    position:relative;
+    border-radius: var(--radius);
+    overflow:hidden;
+    border: 1px solid var(--line-strong);
+  }
+  .g-item svg{ width:100%; height:100%; display:block; }
+  .g-item .label{
+    position:absolute; left:18px; bottom:16px;
+    font-family: var(--font-display);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform:uppercase;
+    color: var(--parchment);
+    background: rgba(10,15,12,0.55);
+    padding: 8px 14px;
+    border: 1px solid var(--line-strong);
+    backdrop-filter: blur(4px);
+  }
+
+  /* ---------------------------------------------------------- */
+  /* download                                                     */
+  /* ---------------------------------------------------------- */
+  .download{
+    background:
+      radial-gradient(ellipse 700px 400px at 50% 0%, rgba(201,162,75,0.10), transparent 60%),
+      var(--bg-void);
+    text-align:center;
+  }
+  .download .eyebrow{ justify-content:center; }
+  .download .eyebrow::before{ display:none; }
+  .download .eyebrow::after{ content:''; width:26px; height:1px; background: var(--gold-dim); }
+  .download h2{ font-size: clamp(34px,5vw,52px); margin: 18px 0 20px; }
+  .download p.sub{ font-family: var(--font-accent); font-style: italic; color: var(--ink-dim); font-size: 19px; max-width: 520px; margin: 0 auto 46px; }
+
+  .seal-btn{
+    position: relative;
+    width: 220px; height: 220px;
+    margin: 0 auto 40px;
+    border-radius: 50%;
+    display:flex; align-items:center; justify-content:center;
+    background: radial-gradient(circle at 35% 30%, #9a3d47, var(--crimson) 55%, #5c1c24 100%);
+    border: 3px solid var(--gold);
+    box-shadow: 0 0 0 1px rgba(201,162,75,0.25), 0 30px 60px rgba(0,0,0,0.55), inset 0 2px 12px rgba(255,255,255,0.08);
+    cursor:pointer;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .seal-btn:hover{ transform: translateY(-4px) scale(1.02); box-shadow: 0 0 0 1px var(--gold-bright), 0 36px 70px rgba(0,0,0,0.6), inset 0 2px 12px rgba(255,255,255,0.1); }
+  .seal-btn:active{ transform: translateY(-1px) scale(0.99); }
+  .seal-btn::before{
+    content:'';
+    position:absolute; inset: 12px;
+    border-radius:50%;
+    border: 1px dashed rgba(233,205,133,0.45);
+  }
+  .seal-inner{
+    display:flex; flex-direction:column; align-items:center; gap: 10px;
+    color: var(--parchment);
+  }
+  .seal-inner svg{ width: 34px; height:34px; }
+  .seal-inner .t1{ font-family: var(--font-display); font-size: 13px; letter-spacing: 0.14em; text-transform:uppercase; }
+  .seal-inner .t2{ font-family: var(--font-accent); font-style: italic; font-size: 13px; color: rgba(236,224,191,0.75); }
+
+  .download-meta{
+    display:flex; justify-content:center; gap: 40px; flex-wrap:wrap;
+    margin-top: 8px;
+    font-family: var(--font-display);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .download-meta span b{ display:block; color: var(--gold-bright); font-size: 20px; font-family: var(--font-accent); text-transform:none; letter-spacing:0; font-style:italic; margin-bottom:4px; }
+
+  .toast{
+    position: fixed;
+    bottom: 30px; left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--bg-panel-2);
+    border: 1px solid var(--gold);
+    color: var(--parchment);
+    padding: 14px 24px;
+    border-radius: var(--radius);
+    font-family: var(--font-display);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events:none;
+    transition: opacity .3s ease, transform .3s ease;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  }
+  .toast.show{ opacity:1; transform: translateX(-50%) translateY(0); pointer-events:auto; }
+
+  /* ---------------------------------------------------------- */
+  /* help / discord                                               */
+  /* ---------------------------------------------------------- */
+  .help{ background: var(--bg-deep); }
+  .help-panel{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    align-items:center;
+    gap: 40px;
+    background: linear-gradient(135deg, var(--bg-panel), var(--bg-panel-2));
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    padding: 56px 60px;
+    position: relative;
+    overflow:hidden;
+  }
+  .help-panel::before{
+    content:'';
+    position:absolute; top:-40%; right:-10%;
+    width: 400px; height:400px;
+    background: radial-gradient(circle, rgba(58,90,80,0.25), transparent 70%);
+  }
+  .help-text{ position:relative; z-index:1; }
+  .help-text .eyebrow{ margin-bottom: 16px; }
+  .help-text h2{ font-size: clamp(28px,3.4vw,38px); margin-bottom: 14px; }
+  .help-text p{ color: var(--ink-dim); font-size: 17px; max-width: 440px; }
+  .help-text p b{ color: var(--gold-bright); font-weight:600; }
+
+  .discord-btn{
+    position: relative; z-index:1;
+    display:flex; align-items:center; gap: 16px;
+    background: rgba(88,101,242,0.10);
+    border: 1px solid rgba(88,101,242,0.4);
+    padding: 20px 28px;
+    border-radius: var(--radius);
+    cursor:pointer;
+    transition: background .25s ease, border-color .25s ease, transform .2s ease;
+    white-space: nowrap;
+  }
+  .discord-btn:hover{ background: rgba(88,101,242,0.18); border-color: #5865F2; transform: translateY(-2px); }
+  .discord-btn .icon-wrap{
+    width: 46px; height:46px;
+    border-radius: 50%;
+    background: #5865F2;
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  .discord-btn .icon-wrap svg{ width:24px; height:24px; fill:#fff; }
+  .discord-btn .txt{ text-align:left; }
+  .discord-btn .txt .l1{ font-family: var(--font-display); font-size: 11px; letter-spacing:0.12em; text-transform:uppercase; color: var(--ink-dim); }
+  .discord-btn .txt .l2{ font-family: var(--font-accent); font-style:italic; font-size: 18px; color: var(--parchment); margin-top:2px; }
+
+  /* ---------------------------------------------------------- */
+  /* footer                                                       */
+  /* ---------------------------------------------------------- */
+  footer{
+    background: var(--bg-void);
+    border-top: 1px solid var(--line);
+    padding: 46px 0;
+  }
+  .footer-row{
+    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap: 16px;
+  }
+  .footer-row .brand{ font-size: 16px; }
+  footer p{ font-size: 13px; color: var(--ink-dim); }
+
+  /* ---------------------------------------------------------- */
+  /* responsive                                                   */
+  /* ---------------------------------------------------------- */
+  @media (max-width: 860px){
+    .nav-links, .nav-cta{ display:none; }
+    .nav-toggle{
+      display:flex; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:8px;
+    }
+    .nav-toggle span{ width:22px; height:1px; background: var(--gold); display:block; }
+    .mobile-menu{
+      display:flex;
+      position:fixed; top:78px; left:0; right:0; z-index:499;
+      background: rgba(10,15,12,0.98);
+      border-bottom: 1px solid var(--line);
+      flex-direction:column;
+      padding: 10px 32px 26px;
+      transform: translateY(-120%);
+      transition: transform .35s ease;
+    }
+    .mobile-menu.open{ transform: translateY(0); }
+    .mobile-menu a{
+      padding: 16px 0; border-bottom: 1px solid var(--line);
+      font-family: var(--font-display); font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color: var(--ink);
+    }
+    .mobile-menu .btn{ margin-top: 18px; justify-content:center; }
+
+    .story-grid{ grid-template-columns: 1fr; gap: 46px; }
+    .story-art{ aspect-ratio: 16/10; }
+    .feature-grid{ grid-template-columns: 1fr; }
+    .gallery-grid{ grid-template-columns: 1fr; grid-template-rows: repeat(3,220px); height:auto; }
+    .gallery-grid .g1{ grid-row: auto; }
+    .help-panel{ grid-template-columns: 1fr; text-align:center; padding: 44px 28px; }
+    .help-text p{ margin: 0 auto; }
+    .discord-btn{ justify-content:center; }
+    section{ padding: 90px 0; }
+    .wrap{ padding: 0 22px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="vignette"></div>
+<div class="fireflies" id="fireflies"></div>
+
+<!-- ============================================================ -->
+<!-- HEADER                                                        -->
+<!-- ============================================================ -->
+<header id="siteHeader">
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <svg class="sigil" viewBox="0 0 24 24"><path d="M12 1l3.2 6.6L22 9l-5 5 1.4 7L12 17.8 5.6 21 7 14 2 9l6.8-1.4z"/></svg>
+      DAKORIA
+    </a>
+    <ul class="nav-links">
+      <li><a href="#story">The Realm</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#help">Need Help?</a></li>
+    </ul>
+    <button class="nav-cta" id="navDownloadBtn">Download</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#story">The Realm</a>
+    <a href="#features">Features</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#help">Need Help?</a>
+    <button class="btn btn-primary" id="mobileDownloadBtn">Download Dakoria</button>
+  </div>
+</header>
+
+<!-- ============================================================ -->
+<!-- HERO                                                          -->
+<!-- ============================================================ -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+
+  <svg class="hero-mountains" viewBox="0 0 1440 340" preserveAspectRatio="none" style="height:42vh;min-height:260px;">
+    <path d="M0 340 L0 220 L180 120 L340 210 L520 90 L680 200 L860 60 L1040 190 L1220 110 L1440 230 L1440 340 Z" fill="#10201a"/>
+    <path d="M0 340 L0 270 L220 190 L430 260 L640 160 L860 250 L1080 170 L1260 240 L1440 190 L1440 340 Z" fill="#0c1712"/>
+    <path d="M0 340 L0 305 L260 260 L520 300 L780 250 L1040 300 L1300 265 L1440 300 L1440 340 Z" fill="#080f0b"/>
+  </svg>
+
+  <div class="hero-content">
+    <div class="eyebrow">A Single-Player 2D Fantasy</div>
+    <h1>DAKORIA<span>an ember-lit realm, waiting to be walked</span></h1>
+    <p class="lede">No parties to wait on, no servers to queue for — just you, a fading kingdom, and whatever you choose to do about it.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary" id="heroDownloadBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
+        Download Dakoria
+      </button>
+      <a href="#story" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        Read the Lore
+      </a>
+    </div>
+    <p class="hero-note">Free to download &nbsp;·&nbsp; <b>Just a few MB</b> &nbsp;·&nbsp; Runs on almost anything &nbsp;·&nbsp; Single-player, always</p>
+  </div>
+
+  <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- STORY                                                         -->
+<!-- ============================================================ -->
+<section class="story" id="story">
+  <div class="wrap story-grid">
+    <div class="story-art reveal">
+      <svg viewBox="0 0 500 620" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#1c2e26"/>
+            <stop offset="100%" stop-color="#0a120d"/>
+          </linearGradient>
+        </defs>
+        <rect width="500" height="620" fill="url(#skyGrad)"/>
+        <circle cx="250" cy="150" r="70" fill="#c9a24b" opacity="0.15"/>
+        <circle cx="250" cy="150" r="46" fill="#e9cd85" opacity="0.5"/>
+        <path d="M0 420 L60 360 L140 410 L230 320 L320 400 L410 340 L500 400 L500 620 L0 620 Z" fill="#0e1b15"/>
+        <path d="M0 480 L90 430 L200 470 L300 410 L410 460 L500 430 L500 620 L0 620 Z" fill="#08120d"/>
+        <rect x="220" y="470" width="18" height="90" fill="#141f19"/>
+        <rect x="260" y="440" width="16" height="120" fill="#141f19"/>
+        <rect x="300" y="480" width="14" height="80" fill="#141f19"/>
+        <polygon points="229,470 229,440 238,455" fill="#0a120d"/>
+      </svg>
+      <div class="frame"></div>
+    </div>
+    <div class="story-text reveal">
+      <div class="eyebrow">The Realm</div>
+      <h2 style="margin:18px 0 26px;">Dakoria wasn't always this quiet.</h2>
+      <p class="first-line">Once, the old kingdom of Dakoria burned bright enough to light the whole valley — its watchtowers lit, its markets loud, its borders held. Then the light started going out, tower by tower, and nobody agreed on why.</p>
+      <p>You arrive with no crown, no army, and no instructions — just a road that keeps going and a realm that's stopped explaining itself. What you find in the ruins, the forests, and the things that live in both, is entirely up to how far you're willing to walk.</p>
+      <p>There's no one else to lean on here. Dakoria is built to be explored alone, at your own pace, on your own terms.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- FEATURES                                                      -->
+<!-- ============================================================ -->
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;"></div>
+      <h2>Built to be played solo, start to finish</h2>
+      <p>Every system in Dakoria is designed around one traveler — not a party, not a server.</p>
+    </div>
+
+    <div class="feature-grid reveal">
+      <div class="feature-card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z"/></svg>
+        <h3>A Realm to Wander</h3>
+        <p>Hand-built forests, ruins, and towns laid out for exploring at whatever pace feels right — no timers, no pressure.</p>
+      </div>
+      <div class="feature-card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke-width="1.4"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16M10 4v16"/></svg>
+        <h3>One Save, Your Story</h3>
+        <p>Every choice, every route through the realm belongs to a single save file — nobody else's game changes what happens in yours.</p>
+      </div>
+      <div class="feature-card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M12 21s-8-5.3-8-11.4C4 6 6.5 4 9 4c1.6 0 2.6 1 3 2 .4-1 1.4-2 3-2 2.5 0 5 2 5 5.6C20 15.7 12 21 12 21z"/></svg>
+        <h3>Creatures of Old</h3>
+        <p>Old-guard beasts and stranger things wait in the ruins — enough of a fight to matter, never a wall you can't get past alone.</p>
+      </div>
+      <div class="feature-card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/><circle cx="12" cy="12" r="3"/></svg>
+        <h3>Gear That Grows With You</h3>
+        <p>Find it, craft it, or trade for it — your kit reflects the road you took, not a class you picked at the start.</p>
+      </div>
+      <div class="feature-card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M3 12l18-8-8 18-2-8-8-2z"/></svg>
+        <h3>No Multiplayer, No Wait</h3>
+        <p>No lobbies, no matchmaking, no one to log off on you. Dakoria is single-player from the title screen onward.</p>
+      </div>
+      <div class="feature-card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <h3>Featherweight Download</h3>
+        <p>Only a few MB. It opens fast, runs on nearly anything, and doesn't ask your machine for much.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- GALLERY                                                       -->
+<!-- ============================================================ -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">A Look Inside</div>
+      <h2>Scenes from the realm</h2>
+    </div>
+
+    <div class="gallery-grid reveal">
+      <div class="g-item g1">
+        <svg viewBox="0 0 700 620" preserveAspectRatio="xMidYMid slice">
+          <rect width="700" height="620" fill="#101c17"/>
+          <circle cx="560" cy="120" r="60" fill="#c9a24b" opacity="0.18"/>
+          <path d="M0 400 L120 320 L260 390 L400 280 L560 370 L700 300 L700 620 L0 620 Z" fill="#0c1712"/>
+          <path d="M0 470 L160 420 L320 470 L480 410 L700 460 L700 620 L0 620 Z" fill="#080f0b"/>
+          <rect x="300" y="410" width="10" height="60" fill="#182620"/>
+          <rect x="330" y="380" width="10" height="90" fill="#182620"/>
+          <rect x="360" y="420" width="10" height="50" fill="#182620"/>
+        </svg>
+        <div class="label">Whistling Vale</div>
+      </div>
+      <div class="g-item">
+        <svg viewBox="0 0 500 300" preserveAspectRatio="xMidYMid slice">
+          <rect width="500" height="300" fill="#141f19"/>
+          <path d="M0 220 L100 170 L200 210 L320 150 L420 200 L500 170 L500 300 L0 300 Z" fill="#0e1b15"/>
+          <rect x="220" y="150" width="14" height="70" fill="#0a120d"/>
+          <rect x="250" y="120" width="16" height="100" fill="#0a120d"/>
+          <polygon points="228,150 228,120 240,138" fill="#7f2a34" opacity="0.8"/>
+        </svg>
+        <div class="label">The Sunken Keep</div>
+      </div>
+      <div class="g-item">
+        <svg viewBox="0 0 500 280" preserveAspectRatio="xMidYMid slice">
+          <rect width="500" height="280" fill="#182620"/>
+          <circle cx="120" cy="80" r="34" fill="#e9cd85" opacity="0.4"/>
+          <path d="M0 200 L120 150 L240 195 L360 140 L500 190 L500 280 L0 280 Z" fill="#101c17"/>
+          <circle cx="380" cy="190" r="8" fill="#a8404c"/>
+        </svg>
+        <div class="label">Emberlight Market</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- DOWNLOAD                                                      -->
+<!-- ============================================================ -->
+<section class="download" id="download">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;">Begin Your Journey</div>
+    <h2 class="reveal">Dakoria is ready when you are</h2>
+    <p class="sub reveal">Break the seal, and the road into Dakoria opens. No account, no install wizard, no waiting on anyone else.</p>
+
+    <button class="seal-btn reveal" id="sealDownloadBtn" aria-label="Download Dakoria">
+      <div class="seal-inner">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z"/></svg>
+        <span class="t1">Download</span>
+        <span class="t2">Break the Seal</span>
+      </div>
+    </button>
+
+    <div class="download-meta reveal">
+      <span><b>Few MB</b>Download Size</span>
+      <span><b>Single-Player</b>No Multiplayer, Ever</span>
+      <span><b>PC</b>Runs Almost Anywhere</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================ -->
+<!-- HELP / DISCORD                                                -->
+<!-- ============================================================ -->
+<section class="help" id="help">
+  <div class="wrap">
+    <div class="help-panel reveal">
+      <div class="help-text">
+        <div class="eyebrow">Need Help?</div>
+        <h2>Stuck in the realm? Come find me.</h2>
+        <p>For bugs, questions, or just to talk about Dakoria, reach out on Discord — click the icon and my username, <b>silvr.ko</b>, is copied straight to your clipboard.</p>
+      </div>
+      <button class="discord-btn" id="discordBtn">
+        <span class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M20.3 5.4A18 18 0 0015.6 4l-.3.6a13 13 0 015 2 15.6 15.6 0 00-15.6 0 13 13 0 015-2L9.4 4a18 18 0 00-4.7 1.4C1.6 9.6 1 13.7 1.2 17.7a18 18 0 005.4 2.7l.7-1.2a11.6 11.6 0 01-1.8-.9l.4-.3a13 13 0 0012.2 0l.4.3c-.6.3-1.2.6-1.8.9l.7 1.2a18 18 0 005.4-2.7c.2-4.6-.8-8.7-3.5-12.3zM8.9 15.4c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.9.9 1.8 2c0 1.1-.8 2-1.8 2zm6.2 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.9.9 1.8 2c0 1.1-.8 2-1.8 2z"/></svg>
+        </span>
+        <span class="txt">
+          <span class="l1">Join the conversation</span>
+          <span class="l2" id="discordLabel">Click to copy: silvr.ko</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FOOTER                                                        -->
+<!-- ============================================================ -->
+<footer>
+  <div class="wrap footer-row">
+    <a href="#top" class="brand">
+      <svg class="sigil" viewBox="0 0 24 24" style="width:18px;height:18px;"><path d="M12 1l3.2 6.6L22 9l-5 5 1.4 7L12 17.8 5.6 21 7 14 2 9l6.8-1.4z"/></svg>
+      DAKORIA
+    </a>
+    <p>A single-player 2D fantasy adventure. Made by silvr.ko.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ================================================================
+   EDIT THIS SECTION — this is the only part you should need to touch
+   ================================================================
+   DOWNLOAD_URL  → paste the link people should be sent to when they
+                   click any "Download" button on the site.
+   DISCORD_USER  → the text copied to the clipboard when someone
+                   clicks the Discord button. Already set to silvr.ko
+================================================================= */
+const DOWNLOAD_URL  = "https://tinyurl.com/mrfpp9mw";
+const DISCORD_USER  = "silvr.ko";
+/* ================================================================ */
+
+// ---- header scroll state ----
+const header = document.getElementById('siteHeader');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 40);
+}, { passive: true });
+
+// ---- mobile menu ----
+const navToggle = document.getElementById('navToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+navToggle.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+// ---- toast ----
+const toastEl = document.getElementById('toast');
+let toastTimer;
+function showToast(msg){
+  toastEl.textContent = msg;
+  toastEl.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2600);
+}
+
+// ---- download buttons ----
+function goToDownload(){
+  if(!DOWNLOAD_URL || DOWNLOAD_URL === "PASTE_YOUR_LINK_HERE"){
+    showToast("No download link set yet — open this file in Notepad to add one.");
+    return;
+  }
+  window.open(DOWNLOAD_URL, "_blank", "noopener");
+}
+['navDownloadBtn','mobileDownloadBtn','heroDownloadBtn','sealDownloadBtn'].forEach(id => {
+  const el = document.getElementById(id);
+  if(el) el.addEventListener('click', goToDownload);
+});
+
+// ---- discord copy ----
+const discordBtn = document.getElementById('discordBtn');
+const discordLabel = document.getElementById('discordLabel');
+discordBtn.addEventListener('click', async () => {
+  try{
+    if(navigator.clipboard && window.isSecureContext){
+      await navigator.clipboard.writeText(DISCORD_USER);
+    } else {
+      const ta = document.createElement('textarea');
+      ta.value = DISCORD_USER;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+    }
+    const original = discordLabel.textContent;
+    discordLabel.textContent = "Copied! Message me on Discord";
+    showToast("Discord username copied: " + DISCORD_USER);
+    setTimeout(() => { discordLabel.textContent = original; }, 2400);
+  } catch(e){
+    showToast("Couldn't copy automatically — my Discord is: " + DISCORD_USER);
+  }
+});
+
+// ---- scroll reveal ----
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+revealEls.forEach(el => io.observe(el));
+
+// ---- fireflies ----
+const fireflyHost = document.getElementById('fireflies');
+for(let i=0; i<22; i++){
+  const f = document.createElement('div');
+  f.className = 'firefly';
+  f.style.left = Math.random()*100 + 'vw';
+  f.style.top = (40 + Math.random()*55) + 'vh';
+  f.style.animationDelay = (Math.random()*14) + 's';
+  f.style.animationDuration = (10 + Math.random()*10) + 's';
+  fireflyHost.appendChild(f);
+}
+</script>
+</body>
+</html>
